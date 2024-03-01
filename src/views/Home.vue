@@ -1,7 +1,9 @@
 <template>
-  <h1 class="text-red-700">Hero</h1>
+  <hero />
 </template>
 
-<script setup></script>
+<script setup>
+import Hero from "./../components/Hero.vue";
+</script>
 
 <style scoped></style>

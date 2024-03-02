@@ -1,5 +1,7 @@
 <template>
-  <hero />
+  <div class="container p-4 mx-auto">
+    <hero />
+  </div>
 </template>
 
 <script setup>

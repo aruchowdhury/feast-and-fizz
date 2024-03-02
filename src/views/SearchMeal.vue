@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-2">
+  <div class="mt-2 container mx-auto p-4">
     <div class="relative">
-      <div class="relative mx-auto px-4 sm:px-6 lg:px-8 rounded-xl">
+      <div class="relative mx-auto sm:px-6 lg:px-8 rounded-xl">
         <h1 class="font-semibold text-center pt-4 pb-8">
           Explore Our Key Features
         </h1>

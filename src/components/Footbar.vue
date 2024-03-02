@@ -1,5 +1,7 @@
 <template>
-  <footer class="py-4 shadow-sm md:flex md:items-center md:justify-between">
+  <footer
+    class="container mx-auto p-4 md:flex md:items-center md:justify-between"
+  >
     <p class="text-primary-300 sm:text-center">
       &copy; {{ year }}
       <router-link :to="{ name: 'home' }" class="hover:underline"

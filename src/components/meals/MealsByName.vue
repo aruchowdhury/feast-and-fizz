@@ -19,12 +19,16 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import store from "../../store";
 import FoodGrid from "../FoodGrid.vue";
 
 const keyword = ref("");
 const meals = computed(() => store.state.searchedMeals);
+
+onMounted(() => {
+  store.dispatch("searchMeals", "Salmon");
+});
 
 function searchMeals() {
   if (keyword.value) {

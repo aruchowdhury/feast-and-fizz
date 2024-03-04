@@ -18,13 +18,17 @@
 
 <script setup>
 import store from "../../store";
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import FoodGrid from "../FoodGrid.vue";
 
 const selectedLetter = ref(null);
 const meals = computed(() => store.state.mealsByLetter);
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+onMounted(() => {
+  store.dispatch("searchMealsByLetter", "A");
+});
 function handleLetterClick(letter) {
   selectedLetter.value = letter;
   store.dispatch("searchMealsByLetter", letter);

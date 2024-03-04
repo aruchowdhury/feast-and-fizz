@@ -11,7 +11,15 @@
       @click="handleClick(category.strCategory)"
       class="block bg-white rounded p-1 mb-2 shadow cursor-pointer"
     >
-      <p class="text-center text-lg">{{ category.strCategory }}</p>
+      <p
+        class="text-center text-lg transition-all"
+        :class="{
+          'text-primary-400 text-xl font-bold':
+            selectedName === category.strCategory,
+        }"
+      >
+        {{ category.strCategory }}
+      </p>
     </span>
   </div>
 
@@ -28,6 +36,7 @@ const selectedName = ref(null);
 
 onMounted(() => {
   store.dispatch("searchCategory");
+  store.dispatch("searchMealsByCategory", "Chicken");
 });
 const handleClick = (categoryName) => {
   selectedName.value = categoryName;

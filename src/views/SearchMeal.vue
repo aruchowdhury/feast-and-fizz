@@ -8,7 +8,7 @@
             :key="tab.name"
             @click="setActiveTab(tab.name)"
             :class="{
-              'bg-primary-600  text-white scale-110 transition duration-200 ease-in-out':
+              'bg-primary-600 font-bold text-white scale-110 transition duration-200 ease-in-out':
                 activeTab === tab.name,
               'bg-primary-300  text-slate-500 hover:bg-primary-500 ':
                 activeTab !== tab.name,

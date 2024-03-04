@@ -9,6 +9,7 @@ body {
   font-weight: 300;
   font-style: normal;
   background: rgb(232, 231, 235);
+  @apply text-slate-600;
 }
 
 h1 {

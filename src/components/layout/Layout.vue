@@ -8,7 +8,7 @@
 <script setup>
 import Navbar from "./Navbar.vue";
 import Footbar from "./Footbar.vue";
-import Loader from "./Loader.vue";
+import Loader from "../Loader.vue";
 import { ref } from "vue";
 
 const loaded = ref(false);

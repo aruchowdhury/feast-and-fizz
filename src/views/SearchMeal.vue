@@ -2,10 +2,7 @@
   <div class="mt-2 container mx-auto p-4">
     <div class="relative">
       <div class="relative mx-auto sm:px-6 lg:px-8 rounded-xl">
-        <h1 class="font-semibold text-center pt-4 pb-8">
-          Explore Our Key Features
-        </h1>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-4 md:gap-12 px-4 md:px-24">
           <button
             v-for="tab in tabs"
             :key="tab.name"
@@ -31,13 +28,13 @@
         :class="{ hidden: tab.name !== activeTab }"
       >
         <div v-if="tab.name === 'search meal'">
-          <SearchByName />
+          <MealsByName />
         </div>
         <div v-if="tab.name === 'search by letter'">
-          <SearchByLetter />
+          <MealsByLetter />
         </div>
-        <div v-if="tab.name === 'search by ingredient'">
-          <SearchByIngredient />
+        <div v-if="tab.name === 'search by category'">
+          <MealsByCategory />
         </div>
       </div>
     </div>
@@ -45,21 +42,20 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import SearchByName from "../components/SearchByName.vue";
-import SearchByIngredient from "../components/SearchByIngredient.vue";
-import SearchByLetter from "../components/SearchByLetter.vue";
+import { ref, computed, onMounted } from "vue";
+import MealsByName from "../components/meals/MealsByName.vue";
+import MealsByCategory from "../components/meals/MealsByCategory.vue";
+import MealsByLetter from "../components/meals/MealsByLetter.vue";
+import store from "../store";
 
 const activeTab = ref("search meal");
 const tabs = [
   { name: "search by letter" },
   { name: "search meal" },
-  { name: "search by ingredient" },
+  { name: "search by category" },
 ];
 
 const setActiveTab = (tabName) => {
   activeTab.value = tabName;
 };
 </script>
-
-<style scoped></style>

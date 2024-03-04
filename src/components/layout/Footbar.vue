@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="container mx-auto p-4 md:flex md:items-center md:justify-between"
+    class="container mx-auto px-4 pt-12 pb-4 md:flex md:items-center md:justify-between"
   >
     <p class="text-primary-300 sm:text-center">
       &copy; {{ year }}

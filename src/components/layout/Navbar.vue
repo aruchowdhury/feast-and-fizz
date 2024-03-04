@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between">
         <router-link to="/" class="w-64 hover:opacity-80">
           <img
-            src="../assets/logo.png"
+            src="../../assets/logo.png"
             alt="Logo"
             class="w-full h-full object-contain flex"
           />
@@ -63,7 +63,9 @@
           }"
           class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link :to="{ name: 'searchdrink' }">Search Drink</router-link>
+          <router-link @click="toggleNav" :to="{ name: 'searchdrink' }"
+            >Search Drink</router-link
+          >
         </li>
         <li
           :class="{
@@ -71,13 +73,17 @@
           }"
           class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link :to="{ name: 'searchmeal' }">Search Meal</router-link>
+          <router-link @click="toggleNav" :to="{ name: 'searchmeal' }"
+            >Search Meal</router-link
+          >
         </li>
         <li
           :class="{ 'border-b-2 border-primary-400': isActive('about') }"
           class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link :to="{ name: 'about' }">About</router-link>
+          <router-link @click="toggleNav" :to="{ name: 'about' }"
+            >About</router-link
+          >
         </li>
       </ul>
     </div>

@@ -79,7 +79,7 @@
         </li>
         <li
           :class="{ 'border-b-2 border-primary-400': isActive('about') }"
-          class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
+          class="pb-6 md:pb-0 text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
           <router-link @click="toggleNav" :to="{ name: 'about' }"
             >About</router-link

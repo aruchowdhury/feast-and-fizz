@@ -1,6 +1,6 @@
 <template>
-  <div class="container p-4 mx-auto flex flex-col md:flex-row justify-between">
-    <div class="w-1/2 md:pe-2 lg:pe-4">
+  <div class="container p-4 mx-auto flex flex-col lg:flex-row justify-between">
+    <div class="lg:w-1/2 md:pe-2 lg:pe-4">
       <h1 class="text-4xl font-bold mb-5 text-orange-500">
         {{ meal.strMeal }}
       </h1>
@@ -10,7 +10,7 @@
         class="aspect-[7/5] object-cover"
       />
     </div>
-    <div class="w-1/2 md:pl-2 lg:pl-4">
+    <div class="lg:w-1/2 md:pl-2 lg:pl-4">
       <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
         <div>
           <strong class="font-bold">Category:</strong> {{ meal.strCategory }}

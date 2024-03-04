@@ -9,12 +9,7 @@
             Try it and Make it
             <span class="text-primary-600 font-extrabold"> !</span>
             <br />
-            <span class="text-primary-600">
-              Cooking and cocktail idea
-              <span class="text-7xl font-extrabold text-slate-400"
-                >.</span
-              ></span
-            >
+            <span class="text-primary-600"> Cooking and cocktail idea. </span>
           </h1>
           <p
             class="mt-4 max-w-md lg:text-2xl text-slate-400 sm:text-lg text-start md:mt-5 md:max-w-3xl"

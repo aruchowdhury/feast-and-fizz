@@ -11,7 +11,7 @@
       />
     </div>
     <div class="lg:w-1/2 md:pl-2 lg:pl-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 text-md py-2 gap-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 text-md py-2 gap-1">
         <div v-if="meal?.strCategory || drink?.strCategory" class="break-all">
           <strong class="font-bold">Category:</strong>
           {{ meal?.strCategory || drink?.strCategory }}
@@ -43,7 +43,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div>
           <h2 class="text-lg font-semibold mb-2">Ingredients</h2>
-          <ul>
+          <ul class="mb-2">
             <template v-for="(el, index) of new Array(20)">
               <li v-if="meal[`strIngredient${index + 1}`]">
                 {{ index + 1 }}. {{ meal[`strIngredient${index + 1}`] }}
@@ -56,7 +56,7 @@
         </div>
         <div>
           <h2 class="text-lg font-semibold mb-2">Measures</h2>
-          <ul>
+          <ul class="mb-2">
             <template v-for="(el, index) of new Array(20)">
               <li v-if="meal[`strMeasure${index + 1}`]">
                 {{ index + 1 }}. {{ meal[`strMeasure${index + 1}`] }}

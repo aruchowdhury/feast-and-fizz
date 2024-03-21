@@ -97,7 +97,10 @@ import { useRoute } from "vue-router";
 let showMenu = ref(false);
 let underline = ref(false);
 const toggleNav = () => (showMenu.value = !showMenu.value);
-const toggleRouterLink = () => (underline.value = !underline.value);
+const toggleRouterLink = () => {
+  underline.value = !underline.value;
+  showMenu.value = false;
+};
 
 const isActive = (routeName) => {
   const route = useRoute();

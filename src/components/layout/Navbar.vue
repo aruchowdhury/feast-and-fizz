@@ -63,7 +63,7 @@
           }"
           class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link @click="toggleNav" :to="{ name: 'searchdrink' }"
+          <router-link @click="toggleRouterLink" :to="{ name: 'searchdrink' }"
             >Search Drink</router-link
           >
         </li>
@@ -73,7 +73,7 @@
           }"
           class="text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link @click="toggleNav" :to="{ name: 'searchmeal' }"
+          <router-link @click="toggleRouterLink" :to="{ name: 'searchmeal' }"
             >Search Meal</router-link
           >
         </li>
@@ -81,7 +81,7 @@
           :class="{ 'border-b-2 border-primary-400': isActive('about') }"
           class="pb-6 md:pb-0 text-primary-500 text-lg cursor-pointer hover:scale-105 duration-200"
         >
-          <router-link @click="toggleNav" :to="{ name: 'about' }"
+          <router-link @click="toggleRouterLink" :to="{ name: 'about' }"
             >About</router-link
           >
         </li>
@@ -95,7 +95,9 @@ import { ref } from "vue";
 import { useRoute } from "vue-router";
 
 let showMenu = ref(false);
+let underline = ref(false);
 const toggleNav = () => (showMenu.value = !showMenu.value);
+const toggleRouterLink = () => (underline.value = !underline.value);
 
 const isActive = (routeName) => {
   const route = useRoute();

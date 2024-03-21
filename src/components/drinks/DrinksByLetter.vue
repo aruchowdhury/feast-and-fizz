@@ -1,6 +1,6 @@
 <template>
   <div class="py-8 pb-0">
-    <h1 class="font-bold mb-4 text-slate-500 text-center">Meals by Letter</h1>
+    <h1 class="font-bold mb-4 text-slate-500 text-center">Drinks by Letter</h1>
   </div>
   <div class="flex flex-wrap justify-center gap-3 mb-12">
     <span

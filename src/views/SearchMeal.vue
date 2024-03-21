@@ -30,10 +30,10 @@
         <div v-if="tab.name === 'search meal'">
           <MealsByName />
         </div>
-        <div v-if="tab.name === 'search by letter'">
+        <div v-if="tab.name === 'by letter'">
           <MealsByLetter />
         </div>
-        <div v-if="tab.name === 'search by category'">
+        <div v-if="tab.name === 'by category'">
           <MealsByCategory />
         </div>
       </div>
@@ -50,9 +50,9 @@ import store from "../store";
 
 const activeTab = ref("search meal");
 const tabs = [
-  { name: "search by letter" },
+  { name: "by letter" },
   { name: "search meal" },
-  { name: "search by category" },
+  { name: "by category" },
 ];
 
 const setActiveTab = (tabName) => {

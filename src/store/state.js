@@ -3,4 +3,8 @@ export default {
   mealsByLetter: [],
   mealsCategory: [],
   mealsByCategory: [],
+  searchedDrinks: [],
+  drinksByLetter: [],
+  drinksCategory: [],
+  drinksByCategory: [],
 };

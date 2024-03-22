@@ -27,7 +27,7 @@
         :key="tab.name"
         :class="{ hidden: tab.name !== activeTab }"
       >
-        <div v-if="tab.name === 'search meal'">
+        <div v-if="tab.name === 'search drink'">
           <DrinksByName />
         </div>
         <div v-if="tab.name === 'by letter'">
@@ -51,7 +51,7 @@ import store from "../store";
 const activeTab = ref("search meal");
 const tabs = [
   { name: "by letter" },
-  { name: "search meal" },
+  { name: "search drink" },
   { name: "by category" },
 ];
 

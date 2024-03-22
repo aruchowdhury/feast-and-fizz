@@ -74,7 +74,7 @@
           text="View on Youtube"
         />
         <a
-          :href="meal.strSource || 'https://www.thecocktaildb.com/'"
+          :href="meal.strSource || 'https://www.thecocktaildb.com/api.php'"
           target="_blank"
           class="ml-3 px-3 py-2 rounded border-2 border-transparent transition-colors hover:text-primary-400 cursor-pointer"
         >

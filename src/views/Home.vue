@@ -2,11 +2,11 @@
   <div class="container p-4 mx-auto">
     <hero />
     <h2 class="text-4xl font-bold my-8 text-primary-400 text-start">
-      Terending Drinks
+      Trending Drinks
     </h2>
     <FoodGrid :meals="drinks" />
     <h2 class="text-4xl font-bold my-10 text-primary-400 text-start">
-      Terending Meals
+      Trending Meals
     </h2>
     <FoodGrid :meals="meals" />
   </div>
